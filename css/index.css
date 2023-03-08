@@ -1,0 +1,238 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    
+  }
+  
+  /* adminbutton styles */
+  .admin-link {
+    background-color: #5d5b5b;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    float: right;
+    margin-left: 10px;
+  }
+  
+  .admin-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Header2 styles */
+  .header2 {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    top: 0;
+    z-index: 999;
+    margin-left: 0;
+  }
+  
+  .header2 li {
+    padding: 0 5px;
+    margin: 0;
+    margin-right: 60px;
+    font-size: 30px;
+   
+  }
+  
+  /* Sidebar styles */
+  .sidebar {
+    margin-left: 0;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .sidebar form {
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .sidebar label {
+    font-size: 16px;
+    margin-right: 20px;
+    flex: 1;
+  }
+  
+  .sidebar input,
+  .sidebar select {
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    flex: 2;
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+  }
+  
+
+  
+  .card {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    transition: all 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+    min-height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex-shrink: 0;
+  }
+  
+  .card-details {
+    padding: 30px;
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left: 1px solid #ddd;
+  }
+  
+  .hotel-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.2;
+  }
+  
+  .hotel-description {
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    color: #666;
+    line-height: 1.4;
+  }
+  
+  .book-now {
+    text-decoration: none;
+    background-color: #008000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    margin-left: auto;
+  }
+  
+  .book-now:hover {
+    background-color: #005700;
+  }
+
+input[type="search"],
+button {
+    border: none;
+    flex:1;
+  padding: 10px;
+  font-size: 16px;
+  color: #000000
+  
+}
+input[type="search"] {
+    border-radius: 30px;
+    outline: none;
+    width: 790px;
+    background-color: #f2f2f2;
+    border: none;
+    
+
+    }
+ .bsearch{
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    flex:none;
+
+ }
+
+
+    button {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    }
+    
+    button:hover {
+    background-color: #1a1a1a;
+    }
+    
+    /* Book now button */
+    .book-now {
+    background-color: #008000;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-left: auto;
+    }
+    
+    .book-now:hover {
+    background-color: #005700;
+    }
+    
+
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      
