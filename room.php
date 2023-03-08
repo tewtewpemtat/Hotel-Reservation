@@ -1,8 +1,9 @@
+<?php include('php/room.php'); ?>
 <!DOCTYPE html>
 <html>
   <head>
     <title>Hotel Reservation</title>
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/room.css">  
   </head>
   <body>
     <header>                        <!-- Header1-->
