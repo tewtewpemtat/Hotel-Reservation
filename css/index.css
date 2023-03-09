@@ -185,8 +185,7 @@ input[type="search"] {
     width: 790px;
     background-color: #f2f2f2;
     border: none;
-    align-items: end;
-    
+    align-items: start;
 
     }
  .bsearch{
