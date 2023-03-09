@@ -8,37 +8,17 @@
   <body>
     <header>                        <!-- Header1-->
       <h1>Hotel Reservation</h1>
-      <a href="#" class="admin-link">Admin</a>
+      <a href="logout.php" class="admin-link">Logout</a>
     </header>                       <!-- Header1-->
 
-        <header class="header2">   <!-- Header2-->
-             <li><a href="#">Home</a></li>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Contact</a></li>
-             <li><a href="#">Reservations</a></li>
-             <li><a href="#">Rooms</a></li>
-             <li><a href="#">Customers</a></li>
-             <li><a href="#">Reports</a></li>
-           </ul>
-        </header>                   <!-- Header2-->
-
-
     <nav>                           <!-- nav -->
-        <h1>กุนเเขมร์ Hotel</h1><br>
+        <h1><?php echo $_SESSION['hotel_name'];?> Hotel </h1>
         <div class="profile">
-            <div class="profile-photo">
-              <img src="hotel1.jpg" alt="Profile Photo">
-            </div>
-            <div class="profile-info">
-              <h4>JohnDoe.Admin</h4>
-              <div class="status">
-                <span class="online"></span>
-                <p>Online</p> 
-              </div>
+              <h4>Hello <?php echo "$username";?></h4>
             </div>
           </div>
       <ul><hr>
-        <li><a href="#">Home</a></li>
+          <li><a href="index.php">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact</a></li>
           <li class="menu-item-has-children">
@@ -52,72 +32,51 @@
     </nav>                           <!-- nav -->
 
      
-    <div class="sidebar">           <!-- content1 -->
-      <input class="fsearch" type="search" placeholder="Search....">
-      <button ><a href="#"  class="bsearch"> Search  </a></button>
+    <div class="sidebar">  
       <form>
+        <label for="bed-type">Bedtype:</label>
+        <select id="boom-type" name="boom-type">
+         <option value="none1">None</option>
+          <option value="bedsingle">Single</option>
+          <option value="beddouble">Double</option>
+        </select>
+        <label for="price-type">Price:</label>
+        <select id="price-type" name="price-type">
+         <option value="none2">None</option>
+          <option value="lowprice">LowPrice</option>
+          <option value="highprice">HighPrice</option>
+        </select><br><br>
         <label for="check-in-date">Check-in date:</label>
         <input type="date" id="check-in-date" name="check-in-date">
         <label for="check-out-date">Check-out date:</label>
         <input type="date" id="check-out-date" name="check-out-date">
-        <label for="room-type">Room type:</label>
-        
+        <label for="room-type">Roomtype:</label>
         <select id="room-type" name="room-type">
-            
-          <option value="single">Single</option>
-          <option value="double">Double</option>
-       
+         <option value="none3">None</option>
+          <option value="roomsingle">Single</option>
+          <option value="roomdouble">Double</option>
         </select> <br>
-      </form> 
-
-
-      <section class="hotel-details"> <!-- detail -->
-        <div class="card">
-          <img src="hotel1.jpg" alt="Hotel Image">
-          <div class="card-details">
-            <h3 class="hotel-name">กุนเเขมร์ Hotel</h3><br>
-            <p class="hotel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id est non magna posuere hendrerit.</p><br>
-            <a href="#" class="book-now">Book Now</a>
-          </div>
         </div>
-      </section> <br>
-      
-          <section class="hotel-details">
-            <div class="card">
-              <img src="hotel2.jpg" alt="Hotel Image">
-              <div class="card-details">
-                <h3 class="hotel-name">เเสงจรัส Hotel</h3>
-                <p class="hotel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id est non magna posuere hendrerit.</p>
-                <a href="#" class="book-now">Book Now</a>
-              </div>
-            </div>
-          </section> <br>
-
-          <section class="hotel-details">
-            <div class="card">
-              <img src="hotel3.jpg" alt="Hotel Image">
-              <div class="card-details">
-                <h3 class="hotel-name">ดํารงเกียรติ Hotel </h3>
-                <p class="hotel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id est non magna posuere hendrerit.</p>
-                <a href="#" class="book-now">Book Now</a>
-              </div>
-            </div> <br>
-
-          </section>
-          <section class="hotel-details"><!-- detail -->
-            <div class="card">
-              <img src="hotel1.jpg" alt="Hotel Image">
-              <div class="card-details">
-                <h3 class="hotel-name">มนตรี Hotel</h3>
-                <p class="hotel-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id est non magna posuere hendrerit.</p>
-                <a href="#" class="book-now">Book Now</a>
-              </div>
-            </div>
-          </section>
-          
-    
-     
-    </div>                           <!-- content1 -->
-
+      </form> 
+        
+<?php
+    if ($stmt2->rowCount() > 0) {
+        while($row = $stmt2->fetch(PDO::FETCH_ASSOC)) {
+        echo "<section class='room-details'>";
+        echo "<div class='card'>";
+        echo "<img src='data:image/jpeg;base64," . base64_encode($row['Image']) . "' alt='Room Image'>";
+        echo "<div class='card-details'>";
+        echo "<h3 class='room-type'>Room " . $row['Number'] . "</h3>";
+        echo "<p class='room-description'>Roomtype: " . $row['Roomtype'] . "</p>";
+        echo "<p class='room-description'>Bedtype: " . $row['Bedtype'] . "</p>";
+        echo "<p class='room-availability'>Status: " . $row['Status'] . "</p>";
+        echo "<p class='room-price'>Price: $" . $row['Price'] . " Per/Day</p>";
+        echo "<a href='#' class='book-now'>Book Now</a>";
+        echo "</div></div></section>";
+         }
+        } else {
+     echo "<p>No results found.</p>";
+    }
+?>                      <!-- content1 -->
   </body>
 </html>

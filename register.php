@@ -26,6 +26,5 @@ include('php/register.php'); ?>
         <a href="login.php" class="button">Login</a>
         </div>
 </form>
-
 </body>
 </html>

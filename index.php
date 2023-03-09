@@ -33,7 +33,7 @@ include('php/index.php');
           echo "<h3 class='hotel-name'>" . $row['name'] . "</h3>";
           echo "<p class='hotel-description'>" . $row['address'] . ", " . $row['province'] . "</p>";
 		  echo "<p class='hotel-availability'>Number of Rooms: " . $row['numberofrooms'] . "</p>";
-          echo "<a href='room.php'" . $row['contact'] . "' class='book-now'>Book Now</a>";
+          echo "<a href='room.php?hotel_name=" . urlencode($row['name']) . "' class='book-now'>View Rooms</a>";
           echo "</div></div></section>";
         }
       } else {
