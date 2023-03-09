@@ -45,11 +45,7 @@
          <option value="none2">None</option>
           <option value="lowprice">LowPrice</option>
           <option value="highprice">HighPrice</option>
-        </select><br><br>
-        <label for="check-in-date">Check-in date:</label>
-        <input type="date" id="check-in-date" name="check-in-date">
-        <label for="check-out-date">Check-out date:</label>
-        <input type="date" id="check-out-date" name="check-out-date">
+        </select>
         <label for="room-type">Roomtype:</label>
         <select id="room-type" name="room-type">
          <option value="none3">None</option>

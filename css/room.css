@@ -279,4 +279,15 @@ nav a:hover {
     border: none;
     padding: 10px;
   }
+  label[for="price-type"], #province {
+    margin-right: -9px;
+  }
+  label[for="room-type"], #province {
+    margin-right: -9px;
+  }
+  label[for="bed-type"], #province {
+    margin-right: -9px;
+  }
+  
+
   

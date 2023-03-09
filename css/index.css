@@ -236,5 +236,11 @@ input[type="search"] {
         flex-direction: column;
         padding: 20px;
       }
-
+      label[for="province"], #province {
+        margin-right: 5px;
+      }
+      
+      label[for="district"], #district {
+        margin-right: 5px;
+      }
       
