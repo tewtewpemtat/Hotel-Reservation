@@ -6,9 +6,9 @@ if (!isset($_SESSION['email'])) {
 }
 if(isset($_GET['q'])) {
     $search_query = $_GET['q'];
-    $sql = "SELECT id, name, address, province, contact, image, numberofrooms FROM hotel WHERE name LIKE '%$search_query%'";
+    $sql = "SELECT id, name, address, province, district, contact, image, numberofrooms FROM hotel WHERE name LIKE '%$search_query%'";
   } else {
-    $sql = "SELECT id, name, address, province, contact, image, numberofrooms FROM hotel";
+    $sql = "SELECT id, name, address, province, district, contact, image, numberofrooms FROM hotel";
   }
     $conn = new PDO("mysql:host=localhost;dbname=hotelreservation;charset=utf8","root","");
     $result = $conn->query($sql);

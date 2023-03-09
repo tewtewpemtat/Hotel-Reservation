@@ -14,11 +14,21 @@ include('php/index.php');
       <a href="logout.php" class="admin-link">Logout</a>
     </header>     
 	<div class="all">                   
-    <div class="sidebar"> 
+    <div class="sidebar" > 
       <!-- content1 -->
       <form action="#" method="GET">
         <input type="search" placeholder="Search...." name="q">
         <button type="submit" class="bsearch">Search</button>
+        <select id="" name="">
+         <option value="">Province</option>
+          <option value=""></option>
+          <option value=""></option> 
+          </select>
+        <select id="" name="">
+         <option value="">District</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
       </form>
         
       <?php
