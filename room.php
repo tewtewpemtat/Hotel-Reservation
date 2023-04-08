@@ -19,13 +19,9 @@
           </div>
       <ul><hr>
           <li><a href="index.php">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
           <li class="menu-item-has-children">
-              <li><a href="#">Reservations</a></li>
-              <li><a href="#">Rooms</a></li>
-              <li><a href="#">Customers</a></li>
-              <li><a href="#">Reports</a></li>
+              <li><a href="reservation.php">Reservation</a></li>
+              <li><a href="payhistory.php">Payment History</a></li>
             </ul>
           </li>
       </ul>
@@ -33,27 +29,29 @@
 
      
     <div class="sidebar">  
-      <form>
-        <label for="bed-type">Bedtype:</label>
-        <select id="boom-type" name="boom-type">
-         <option value="none1">None</option>
-          <option value="bedsingle">Single</option>
-          <option value="beddouble">Double</option>
-        </select>
-        <label for="price-type">Price:</label>
-        <select id="price-type" name="price-type">
-         <option value="none2">None</option>
-          <option value="lowprice">LowPrice</option>
-          <option value="highprice">HighPrice</option>
-        </select>
-        <label for="room-type">Roomtype:</label>
-        <select id="room-type" name="room-type">
-         <option value="none3">None</option>
-          <option value="roomsingle">Single</option>
-          <option value="roomdouble">Double</option>
-        </select> <br>
-        </div>
-      </form> 
+    <form method="POST" action="">
+    <label for="room-type">Room Type:</label>
+    <select name="room-type" id="room-type">
+        <option value="">None</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+    </select>
+    <label for="bed-type">Bed Type:</label>
+    <select name="bed-type" id="bed-type">
+        <option value="">None</option>
+        <option value="single">Single</option>
+        <option value="double">Double</option>
+    </select>
+    <label for="price-type">Price Rate:</label>
+    <select name="price-type" id="price-type">
+        <option value="">None</option>
+        <option value="high">High</option>
+        <option value="low">Low</option>
+    </select>
+    <button type="submit" name="submit">Go</button>
+</form>
+</div>
+
         
 <?php
     if ($stmt2->rowCount() > 0) {
@@ -67,12 +65,13 @@
         echo "<p class='room-description'>Bedtype: " . $row['Bedtype'] . "</p>";
         echo "<p class='room-availability'>Status: " . $row['Status'] . "</p>";
         echo "<p class='room-price'>Price: $" . $row['Price'] . " Per/Day</p>";
-        echo "<a href='#' class='book-now'>Book Now</a>";
+        echo "<a href='booking.php?Number=" . $row['Number']. "' class='book-now'>Book Now</a>";
         echo "</div></div></section>";
          }
         } else {
-     echo "<p>No results found.</p>";
+     echo "<h5>ไม่พบห้องว่าง</h5>";
     }
+
 ?>                      <!-- content1 -->
   </body>
 </html>

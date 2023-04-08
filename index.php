@@ -12,7 +12,21 @@ include('php/index.php');
     <header>                        
       <h1>Hotel Reservation</h1>
         <a href="logout.php" class="admin-link">Logout</a>
-      </header>     
+      </header> 
+      <nav>                           <!-- nav -->
+        <div class="profile">
+        <div class="profile">
+              <div class="profile">
+              <center><h4>Hello <?php echo "$username";?></h4><center>
+              </div>
+            </div>
+      <ul><hr>
+          <li><a href="reservation.php">Reservation</a></li>
+          <li><a href="payhistory.php">Payment History</a></li>
+            </ul>
+          </li>
+      </ul>
+    </nav>      
     <div class="all">                   
       <div class="sidebar" > 
         <!-- content1 -->
@@ -63,10 +77,7 @@ include('php/index.php');
         echo "<p>No results found.</p>";
       }
       ?>	  
-
-
-     
     </div>
- </div>                              <!-- content1 -->
+ </div>                        
   </body>
 </html>

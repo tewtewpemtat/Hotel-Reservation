@@ -1,0 +1,110 @@
+/* Reset styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Font styles */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  /* Admin button styles */
+  .admin-link {
+    background-color: #5d5b5b;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-left: 10px;
+  }
+  
+  .admin-link:hover {
+    background-color: #1a1a1a;
+    color: #fff;
+  }
+  
+  /* Booking form styles */
+  .booking-form {
+    margin: 30px auto;
+    max-width: 600px;
+    padding: 20px;
+    height: 270px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .booking-form h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .booking-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .booking-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    float: right;
+  }
+  
+  .booking-form button:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .back-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    float: left;
+  }
+  
+  .back-button:hover {
+    background-color: #1a1a1a;
+  }
+  

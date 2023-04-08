@@ -8,10 +8,11 @@ h1 {
   text-align: center;
 }
 
-h2,
+h2 ,
 h3 {text-align: left;}
 h4 {text-align: center;}
-h5,
+h5 {margin-left:310px;
+color:black;} 
 h6 {
   margin: 0;
 }
@@ -20,6 +21,7 @@ a {
   text-decoration: none;
   color: #333;
 }
+
 
 /* Header styles */
 header {
@@ -142,7 +144,7 @@ nav a:hover {
   flex-wrap: wrap;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 20px;
+  padding: 15px;
   flex: 1;
 }
 
@@ -170,20 +172,21 @@ nav a:hover {
   
   .card {
     display: flex;
-    width: 950px;
+    width: 900px;
     height: 230px;
     max-width: 1500px; /* Increase this value to make the cards wider */
     background-color: #fff;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     border-radius: 5px;
+    margin-left: 310px;
   }
   
   .card img {
     width: 300px;
     height: 225px;
     object-fit: cover;
-    margin-left: 5px;
+  
     margin-right: 20px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
