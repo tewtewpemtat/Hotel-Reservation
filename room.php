@@ -64,7 +64,7 @@
         echo "<p class='room-description'>Roomtype: " . $row['Roomtype'] . "</p>";
         echo "<p class='room-description'>Bedtype: " . $row['Bedtype'] . "</p>";
         echo "<p class='room-availability'>Status: " . $row['Status'] . "</p>";
-        echo "<p class='room-price'>Price: $" . $row['Price'] . " Per/Day</p>";
+        echo "<p class='room-price'>Price: " . $row['Price'] . "฿ ต่อคืน</p>";
         echo "<a href='booking.php?Number=" . $row['Number']. "' class='book-now'>Book Now</a>";
         echo "</div></div></section>";
          }
