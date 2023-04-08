@@ -69,7 +69,7 @@ include('php/index.php');
           echo "<div class='card-details'>";
           echo "<h3 class='hotel-name'>" . $row['name'] . "</h3>";
           echo "<p class='hotel-description'>" . $row['address'] . ", " . $row['province'] . ", " . $row['district'] . "</p>";
-		      echo "<p class='hotel-availability'>Number of Rooms: " . $row['numberofrooms'] . "</p>";
+		      echo "<p class='hotel-availability'>Available Rooms: " . $row['numberofrooms'] . "</p>";
           echo "<a href='room.php?hotel_name=" . urlencode($row['name']) . "' class='book-now'>View Rooms</a>";
           echo "</div></div></section>";
         }
