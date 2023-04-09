@@ -36,7 +36,7 @@ nav {
   }
 
   nav {
-  width: 200px;
+  width: 250px;
   height: 200vh;
   top: 10;
   left: 0;
@@ -226,7 +226,7 @@ nav {
   color: #fff;
   border-radius: 20px;
   padding: 10px 20px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease;  
   margin-left: auto;
 }
 
