@@ -24,7 +24,6 @@ $stmt2 = $conn->prepare($sql2);
     } else {
         $room_type = $_POST['room-type'];
         $bed_type = $_POST['bed-type'];
-        $price_type = $_POST['price-type'];
 
         $sql2 = "SELECT * FROM room WHERE Hotel = :hotel_name AND status = 'available'";
     if ($room_type !== '') {

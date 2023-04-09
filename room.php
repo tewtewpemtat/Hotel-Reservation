@@ -42,12 +42,6 @@
         <option value="single">Single</option>
         <option value="double">Double</option>
     </select>
-    <label for="price-type">Price Rate:</label>
-    <select name="price-type" id="price-type">
-        <option value="">None</option>
-        <option value="high">High</option>
-        <option value="low">Low</option>
-    </select>
     <button type="submit" name="submit">Go</button>
 </form>
 </div>
