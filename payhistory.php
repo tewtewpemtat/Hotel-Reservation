@@ -20,6 +20,7 @@ include('php/payhistory.php');
         <div class="profile">
             <center><h4>Hello <?php echo "$username";?></h4></center>
         </div>
+        <hr>
         <ul>
             <li><a href="index.php">Home</a></li>
             <li><a href="reservation.php">Reservation</a></li>
