@@ -57,11 +57,8 @@ include('php/index.php');
           <button type="submit" class="bsearch">Go</button>
         </form>
       <?php
-      
       if ($result->rowCount() > 0) {
-        // output data of each row
         while($row = $result ->fetch(PDO::FETCH_ASSOC)) {
-          // Display the data here
           echo "<section class='hotel-details'>";
           echo "<div class='card'>";
           echo "<img src='data:image/jpeg;base64," . base64_encode($row['image']) . "' alt='Hotel Image'>";

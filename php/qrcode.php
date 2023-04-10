@@ -12,14 +12,11 @@ $user = $stmt->fetch();
 $username = $user['username'];
 $roomID = $_SESSION['roomID'];
 $hotel = $_SESSION['hotel'];
+$total = $_SESSION['price'];
 
 if(isset($_POST['check-pay'])){
     $status = 'Payment Successful';
     $paytype = 'Promtpay';
-
-    $stmt = $conn->prepare("SELECT Price FROM room WHERE Number = ? AND Hotel = ?");
-    $stmt->execute([$roomID, $hotel]);
-    $price = $stmt->fetchColumn();
 
     $stmt = $conn->prepare("UPDATE reservation SET Status = ? WHERE RoomID = ? AND Hotel = ?");
     $stmt->execute([$status, $roomID, $hotel]);
@@ -29,7 +26,7 @@ if(isset($_POST['check-pay'])){
 
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':name', $username);
-    $stmt->bindParam(':amount', $price);
+    $stmt->bindParam(':amount', $total);
     $stmt->bindParam(':paytype', $paytype);
     $stmt->bindParam(':hotel', $hotel);
     $stmt->bindParam(':room', $roomID);

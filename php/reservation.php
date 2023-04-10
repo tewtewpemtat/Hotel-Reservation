@@ -11,14 +11,15 @@ $stmt = $conn->prepare("SELECT username FROM user WHERE email = ?");
 $stmt->execute([$email]);
 $user = $stmt->fetch();
 $username = $user['username'];
-
 $reservation_stmt = $conn->prepare("SELECT * FROM reservation WHERE Name = ? AND Status = 'Pending payment'");
 $reservation_stmt->execute([$username]);
 $reservation = $reservation_stmt->fetchAll();
 
+
+
 if (isset($_POST['cancel'])) {
   $roomID = $_POST['roomID'];
-  $hotel = $_POST['hotel'];
+  $hotel = $_POST['hotel']; 
 
   $update_stmt = $conn->prepare("UPDATE room SET status = 'Available' WHERE Number = ? AND Hotel = ?");
   $update_stmt->execute([$roomID, $hotel]);

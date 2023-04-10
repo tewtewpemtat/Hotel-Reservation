@@ -41,16 +41,18 @@ include('php/reservation.php'); ?>
             <li><span>CheckOutDate:</span> <?php echo $reservation['CheckOutDate']; ?></li>
             <li><span>RoomNo.:</span> <?php echo $reservation['RoomID']; ?></li>
             <li><span>Hotel:</span> <?php echo $reservation['Hotel']; ?></li>
+            <li><span>Total Price:</span> <?php echo $reservation['Total']; ?></li>
             <li><span>Status:</span> <?php echo $reservation['Status']; ?></li>
         </ul>
     </div>
     <div class="booking-actions">
-    <a href="payment.php?roomID=<?php echo $reservation['RoomID']; ?>&hotel=<?php echo $reservation['Hotel']; ?>" class="btn">Payment</a>
+    <a href="payment.php?roomID=<?php echo $reservation['RoomID']; ?>&hotel=<?php echo $reservation['Hotel']; ?>&total=<?php echo $reservation['Total']; ?>" class="btn">Payment</a>
         <button type="submit" class="btn2" name="cancel" onclick="return confirm('Do you want to cancel this room reservation?')" value="submit">
             Cancel
         </button>
         <input type="hidden" name="roomID" value="<?php echo $reservation['RoomID']; ?>">
         <input type="hidden" name="hotel" value="<?php echo $reservation['Hotel']; ?>">
+        <input type="hidden" name="price" value="<?php echo $reservation['Total']; ?>">
     </div>
     <?php endforeach; ?>
     <?php endif; ?>

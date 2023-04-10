@@ -39,6 +39,27 @@ if(isset($_POST['book-now'])){
     $stmt->bindParam(':hotel_name', $hotel_name);
     $stmt->bindParam(':status', $status2);
     $stmt->execute();
+
+    $check_in_date = new DateTime($_POST['check_in_date']);
+    $check_out_date = new DateTime($_POST['check_out_date']);
+    $diff = $check_out_date->diff($check_in_date);
+    $num_nights = $diff->days;
+    $sql = "SELECT Price FROM room WHERE Number = :room_number AND Hotel = :hotel_name";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':room_number', $roomNumber);
+    $stmt->bindParam(':hotel_name', $hotel_name);
+    $stmt->execute();
+    $price = $stmt->fetch()['Price'];
+    $total_price = $num_nights * $price;
+    
+    $sql = "UPDATE reservation SET total = :total WHERE RoomID = :room_number AND Hotel = :hotel_name";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':total', $total_price);
+    $stmt->bindParam(':room_number', $roomNumber);
+    $stmt->bindParam(':hotel_name', $hotel_name);
+    $stmt->execute();
+    
+    $_SESSION['price'] = $total_price;
     header("Location: reservation.php");
     exit();
 }
