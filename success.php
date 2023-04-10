@@ -1,9 +1,11 @@
 <?php
 session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
+if (!isset($_SESSION['success'])) {
+    header("Location: index.php");
     exit;
-}?>
+}
+  unset($_SESSION['success']);
+?>
 <html>
   <head>
   <link rel="stylesheet" href="css/success.css">

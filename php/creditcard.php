@@ -33,6 +33,7 @@ if(isset($_POST['pay-now'])){
     $stmt->bindParam(':status', $status);
     $stmt->execute();
 
+    $_SESSION['success'] = "success";
     header("Location: success.php");
     exit();
 }

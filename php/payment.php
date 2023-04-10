@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!isset($_GET['roomID']) && isset($_GET['hotel'])) {
+if (!isset($_GET['roomID']) && !isset($_GET['hotel'])) {
     header("Location: index.php");
     exit;
 }

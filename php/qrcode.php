@@ -14,6 +14,7 @@ $roomID = $_SESSION['roomID'];
 $hotel = $_SESSION['hotel'];
 $total = $_SESSION['price'];
 
+
 if(isset($_POST['check-pay'])){
     $status = 'Payment Successful';
     $paytype = 'Promtpay';
@@ -33,6 +34,7 @@ if(isset($_POST['check-pay'])){
     $stmt->bindParam(':status', $status);
     $stmt->execute();
 
+    $_SESSION['success'] = "success";
     header("Location: success.php");
     exit();
 }
