@@ -13,7 +13,7 @@ $user = $stmt->fetch();
 $username = $user['username'];
 
 // Fetch reservation data for the user
-$reservation_stmt = $conn->prepare("SELECT * FROM reservation WHERE Name = ? AND Status = 'รอชำระเงิน'");
+$reservation_stmt = $conn->prepare("SELECT * FROM reservation WHERE Name = ? AND Status = 'Pending payment'");
 $reservation_stmt->execute([$username]);
 $reservation = $reservation_stmt->fetchAll();
 

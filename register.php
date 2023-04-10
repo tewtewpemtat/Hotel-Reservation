@@ -22,8 +22,8 @@ include('php/register.php'); ?>
 	    <input type="tel" name="contact" required><br><br>
 	    
 	    <div class="button-container">
+		<a href="login.php" class="button">Back</a>
         <button type="submit" class="button">Confirm</button>
-        <a href="login.php" class="button">Login</a>
         </div>
 </form>
 </body>

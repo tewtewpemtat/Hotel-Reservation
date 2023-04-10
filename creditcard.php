@@ -16,41 +16,39 @@ include('php/creditcard.php'); ?>
       <h1>Payment</h1>
         <a href="index.php" class="admin-link">HOME</a>
       </header> 
-      <div class="container">
 <div class="container">
-<center><h4>Hello <?php echo $roomID;?></h4><center>
 <form action="" method="POST">
 
         <div class="row">
 
             <div class="col">
 
-                <center><h3 class="title">ชื่อ-ที่อยู่สำหรับการติดต่อ</h3></center>
+                <center><h3 class="title">Contact and address</h3></center>
 
                 <div class="inputBox">
-                    <span>ชื่อ-นามสกุล :</span>
+                    <span>First and last name :</span>
                     <input type="text" placeholder="John Deo" name = "name"  required >
                 </div>
                 <div class="inputBox">
-                    <span>อีเมล :</span>
+                    <span>Email :</span>
                     <input type="email" placeholder="example@example.com"  required>
                 </div>
                 <div class="inputBox">
-                    <span>ที่อยู่ :</span>
+                    <span>Address :</span>
                     <input type="text" placeholder="Room - Street - Locality" required>
                 </div>
                 <div class="inputBox">
-                    <span>เมือง :</span>
+                    <span>City :</span>
                     <input type="text" placeholder="ฺBangkok" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
-                        <span>ประเทศ :</span>
+                        <span>Country :</span>
                         <input type="text" placeholder="Thailand" required>
                     </div>
                     <div class="inputBox">
-                        <span>รหัสไปรษณีย์ :</span>
+                        <span>Postal code :</span>
                         <input type="text" placeholder="395669" required>
                     </div>
                 </div>
@@ -58,39 +56,39 @@ include('php/creditcard.php'); ?>
             </div>
 
             <div class="col">
-                <center><h3 class="title">ชำระเงินด้วยบัตรเครดิต</h3></center>
+                <center><h3 class="title">Pay by credit card</h3></center>
 
                 <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="Image/card_img.png" alt="">
+                    <span>Cards accepted :</span>
+                    <img src="Image/card_img.png"  alt="">
                 </div>
                 <div class="inputBox">
-                    <span>ชื่อ-นามสกุล ที่เเสดงบนบัตร :</span>
+                    <span>Name on card :</span>
                     <input type="text" placeholder="MR. JOHN DEO" required>
                 </div>
                 <div class="inputBox">
-                    <span>หมายเลขบัตร :</span>
+                    <span>Card number :</span>
                     <input type="text" placeholder="1111-2222-3333-4444" required>
                 </div>
                 <div class="inputBox">
-                    <span>เดือนหมดอายุ:</span>
+                    <span>Expiration month :</span>
                     <input type="text" placeholder="05" required>
                 </div>
 
                 <div class="flex">
                     <div class="inputBox">
-                        <span>วันหมดอายุ :</span>
+                        <span>Expiration year :</span>
                         <input type="text" placeholder="2022" required>
                     </div>
                     <div class="inputBox">
-                        <span>รหัสหลังบัตร 3 หลัก :</span>
+                        <span>CVV code :</span>
                         <input type="text" placeholder="033" required>
                     </div>
                 </div>
 
             
         </div>
-        <button type="submit" class = "submit-btn" name="pay-now">ชำระเงิน</button>
+        <button type="submit" class = "submit-btn" name="pay-now">Payment</button>
     </form>
 </div>    
 </body>

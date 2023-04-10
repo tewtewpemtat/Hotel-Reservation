@@ -12,12 +12,12 @@ if (!isset($_SESSION['email'])) {
     <header>                        
       <h1>Reservation</h1>
     
-        <a href="index.php" class="admin-link">กลับหน้าหลัก</a>
+        <a href="index.php" class="admin-link">HOME</a>
       </header> 
       <div class="card">
       <img src="image/succesfull.jpg" alt="" width = 270px >
-      <h1>ยกเลิกการจองสำเร็จ</h1> <br>
-        <center><p>  การดำเนินการเสร็จสิ้น </p><p>ขอให้เป็นวันที่ดี</p></center>
+      <h1>Cancellation Successful</h1> <br>
+        <center><p>  Transaction Completed </p><p>Have a nice day</p></center>
       </div><br>
        
     </body>

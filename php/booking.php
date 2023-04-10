@@ -24,7 +24,7 @@ if(isset($_POST['book-now'])){
     $check_in_date = $_POST['check_in_date'];
     $check_out_date = $_POST['check_out_date'];
     $status = 'Unavailable';
-    $status2 = 'รอชำระเงิน';
+    $status2 = 'Pending payment';
 
 
     // update room status in database

@@ -30,26 +30,26 @@ include('php/reservation.php'); ?>
     </nav>  
     <div class="container">
     <?php if(empty($reservation)): ?>
-        <p>ไม่มีรายละเอียดการจองห้องพัก</p>
+        <p>No reservation details.</p>
     <?php else: ?>
-        <h1><center>รายละเอียดการจองโรงแรม</center></h1><br>
+        <h1><center>Reservation Details</center></h1><br>
         <form method="POST">
             <?php foreach($reservation as $reservation): ?>
               <div class="booking-details">
         <ul>
-            <li><span>ชื่อ:</span> <?php echo $reservation['Name']; ?></li>
-            <li><span>วันที่เช็คอิน:</span> <?php echo $reservation['CheckInDate']; ?></li>
-            <li><span>วันที่เช็คเอาท์:</span> <?php echo $reservation['CheckOutDate']; ?></li>
-            <li><span>หมายเลขห้องพัก:</span> <?php echo $reservation['RoomID']; ?></li>
-            <li><span>โรงแรม:</span> <?php echo $reservation['Hotel']; ?></li>
-            <li><span>สถานะ:</span> <?php echo $reservation['Status']; ?></li>
+            <li><span>Name:</span> <?php echo $reservation['Name']; ?></li>
+            <li><span>CheckInDate:</span> <?php echo $reservation['CheckInDate']; ?></li>
+            <li><span>CheckOutDate:</span> <?php echo $reservation['CheckOutDate']; ?></li>
+            <li><span>RoomNo.:</span> <?php echo $reservation['RoomID']; ?></li>
+            <li><span>Hotel:</span> <?php echo $reservation['Hotel']; ?></li>
+            <li><span>Status:</span> <?php echo $reservation['Status']; ?></li>
         </ul>
     </div>
 
     <div class="booking-actions">
-    <a href="payment.php?roomID=<?php echo $reservation['RoomID']; ?>&hotel=<?php echo $reservation['Hotel']; ?>" class="btn">ชำระเงิน</a>
-        <button type="submit" class="btn" name="cancel" onclick="return confirm('คุณต้องการยกเลิกการจองห้องพักนี้ใช่หรือไม่?')" value="submit">
-            ยกเลิกการจอง
+    <a href="payment.php?roomID=<?php echo $reservation['RoomID']; ?>&hotel=<?php echo $reservation['Hotel']; ?>" class="btn">Payment</a>
+        <button type="submit" class="btn2" name="cancel" onclick="return confirm('Do you want to cancel this room reservation?')" value="submit">
+            Cancel
         </button>
         <input type="hidden" name="roomID" value="<?php echo $reservation['RoomID']; ?>">
         <input type="hidden" name="hotel" value="<?php echo $reservation['Hotel']; ?>">

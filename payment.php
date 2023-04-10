@@ -17,21 +17,21 @@ include('php/payment.php');
   </header>
   <div class="container">
     <form action="" method="post">
-      <center><h2>เลือกรูปแบบการชำระเงิน</h2></center>
+      <center><h2>Choose payment method</h2></center>
       <div class="row">
         <div class="col">
           <input type="radio" id="credit-card" name="payment-method" value="credit-card">
-          <label for="credit-card">ชำระด้วยบัตรเครดิต</label><br>
+          <label for="credit-card">Pay by credit card</label><br>
           <img src="Image/card_img.png" class="Img" alt="">
         </div>
         <div class="col">
           <input type="radio" id="promptpay" name="payment-method" value="promptpay">
-          <label for="promptpay">ชำระด้วยพร้อมเพย์</label><br>
+          <label for="promptpay">Pay with PromptPay</label><br>
           <img src="Image/promptpay.png" class="Img" alt="">
         </div>
       </div> 
       <div class="row">
-        <input type="submit" class="btn" value="ยืนยันการชำระเงิน">
+        <input type="submit" class="btn" value="Confirm payment">
       </div> 
     </form>
   </div>

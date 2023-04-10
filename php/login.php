@@ -24,14 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         if($user) {
             // User found, redirect to home page or dashboard
-            echo "<script>alert('Invalid email or password.');</script>";
-            header("Location:index.php");
+            $_SESSION['email'] = $email;
+            echo "<script>alert('Login Successful!');window.location.href='index.php';</script>";
         } else {
             // User not found, show error message
             echo "<script>alert('Invalid email or password.');</script>";
         }
     }
-    $_SESSION['email'] = $email;
+    
 }
 
 ?>

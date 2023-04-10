@@ -58,12 +58,12 @@
         echo "<p class='room-description'>Roomtype: " . $row['Roomtype'] . "</p>";
         echo "<p class='room-description'>Bedtype: " . $row['Bedtype'] . "</p>";
         echo "<p class='room-availability'>Status: " . $row['Status'] . "</p>";
-        echo "<p class='room-price'>Price: " . $row['Price'] . "฿ ต่อคืน</p>";
+        echo "<p class='room-price'>Price: " . $row['Price'] . "฿ 1/day</p>";
         echo "<a href='booking.php?Number=" . $row['Number']. "' class='book-now'>Book Now</a>";
         echo "</div></div></section>";
          }
         } else {
-     echo "<h5>ไม่พบห้องว่าง</h5>";
+     echo "<h5>No rooms available</h5>";
     }
 
 ?>                      <!-- content1 -->

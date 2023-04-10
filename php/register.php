@@ -22,7 +22,7 @@
 	        try {
 	            $result = $stmt->execute(array(':username'=>$username, ':password'=>$password, ':email'=>$email, ':contact'=>$contact));
 	            if($result) {
-                    echo "<script>alert('User registered successfully!');</script>";
+                    echo "<script>alert('User registered successfully!');window.location.href='login.php';</script>";
 	            } else {
                     echo "<script>alert('An error occurred while registering. Please try again later.');</script>";
 	            }

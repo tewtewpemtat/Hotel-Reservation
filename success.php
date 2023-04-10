@@ -12,14 +12,14 @@ if (!isset($_SESSION['email'])) {
     <header>                        
       <h1>Payment</h1>
     
-        <a href="index.php" class="admin-link">กลับหน้าหลัก</a>
+        <a href="index.php" class="admin-link">Home</a>
       </header> 
       <div class="card">
       <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
       </div><br>
-        <h1>การชำระเงินสำเร็จ</h1> <br>
-        <center><p>  ขอบคุณสำหรับการชำระเงิน </p><p>ขอให้มีความสุขกับการเข้าพักโรงเเรม</p></center>
+        <h1>Payment successful</h1> <br>
+        <center><p>  Thank you for your payment </p><p>Enjoy your stay at the hotel</p></center>
        
     </body>
 </html>

@@ -19,7 +19,7 @@ $hotel = $_SESSION['hotel'];
 // fetch the price for the given room and hotel
 
 if(isset($_POST['pay-now'])){
-    $status = 'ชำระเงินสำเร็จ';
+    $status = 'Payment Successful';
     $paytype = 'Creditcard';
 
     // fetch the price for the given room and hotel

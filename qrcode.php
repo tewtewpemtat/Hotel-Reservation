@@ -26,11 +26,11 @@ include('php/qrcode.php');
 
 
                 <div class="col">
-                     <center><h2 class="title">ชำระเงินด้วยพร้อมเพย์</h2></center><br>
+                     <center><h2 class="title">Pay with PromptPay</h2></center><br>
                 <center><img src="https://fp.lnwfile.com/_/fp/_raw/9h/ti/pr.png"  width = "250px" alt="QR Code Promtpay" class="qr-code"></center>
                 </div>
         </div>
-        <button type="submit" class = "submit-btn" name="check-pay">ตรวจสอบการชำระเงิน</button>
+        <button type="submit" class = "submit-btn" name="check-pay">Check payment status</button>
 
     </form>
 </div>    
