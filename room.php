@@ -6,12 +6,11 @@
     <link rel="stylesheet" type="text/css" href="css/room.css">  
   </head>
   <body>
-    <header>                        <!-- Header1-->
+    <header>                     
       <h1>Hotel Reservation</h1>
       <a href="logout.php" class="admin-link">Logout</a>
-    </header>                       <!-- Header1-->
-
-    <nav>                           <!-- nav -->
+    </header>                    
+    <nav>                           
         <h1><?php echo $_SESSION['hotel_name'];?> Hotel </h1>
         <div class="profile">
               <h4>Hello <?php echo "$username";?></h4>
@@ -25,9 +24,7 @@
             </ul>
           </li>
       </ul>
-    </nav>                           <!-- nav -->
-
-     
+    </nav>                        
     <div class="sidebar">  
     <form method="POST" action="">
     <label for="room-type">Room Type:</label>
@@ -45,8 +42,6 @@
     <button type="submit" name="submit">Go</button>
 </form>
 </div>
-
-        
 <?php
     if ($stmt2->rowCount() > 0) {
         while($row = $stmt2->fetch(PDO::FETCH_ASSOC)) {
@@ -65,7 +60,6 @@
         } else {
      echo "<h5>No rooms available</h5>";
     }
-
-?>                      <!-- content1 -->
+?>                  
   </body>
 </html>

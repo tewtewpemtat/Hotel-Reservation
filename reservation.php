@@ -12,7 +12,6 @@ include('php/reservation.php'); ?>
 <body>
       <header>                        
       <h1>Reservation</h1>
-      
         <a href="logout.php" class="admin-link">Logout</a>
       </header> 
       <nav>                           <!-- nav -->
@@ -45,7 +44,6 @@ include('php/reservation.php'); ?>
             <li><span>Status:</span> <?php echo $reservation['Status']; ?></li>
         </ul>
     </div>
-
     <div class="booking-actions">
     <a href="payment.php?roomID=<?php echo $reservation['RoomID']; ?>&hotel=<?php echo $reservation['Hotel']; ?>" class="btn">Payment</a>
         <button type="submit" class="btn2" name="cancel" onclick="return confirm('Do you want to cancel this room reservation?')" value="submit">
@@ -54,11 +52,10 @@ include('php/reservation.php'); ?>
         <input type="hidden" name="roomID" value="<?php echo $reservation['RoomID']; ?>">
         <input type="hidden" name="hotel" value="<?php echo $reservation['Hotel']; ?>">
     </div>
-            <?php endforeach; ?>
-        </form>  
+    <?php endforeach; ?>
     <?php endif; ?>
-</div>
-      </form>  
+    </div>
+    </form>  
 </body>
 </html>
 </div>

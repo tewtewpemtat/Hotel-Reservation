@@ -1,16 +1,13 @@
-/* Reset styles */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  /* Font styles */
   body {
     font-family: 'Roboto', sans-serif;
   }
   
-  /* Header styles */
   header {
     background-color: #333;
     color: #fff;
@@ -25,7 +22,6 @@
     margin: 0;
   }
   
-  /* Admin button styles */
   .admin-link {
     background-color: #5d5b5b;
     color: #fff;
@@ -43,7 +39,6 @@
     color: #fff;
   }
   
-  /* Booking form styles */
   .booking-form {
     margin: 30px auto;
     max-width: 600px;

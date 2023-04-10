@@ -58,14 +58,14 @@ body {
   }
   
   .radio-container label {
-    display: inline-block; /* ให้ Label แสดงเป็น Block และอยู่ในบรรทัดเดียวกันกับ Input */
-    margin-right: 10px; /* ให้ระยะห่าง 10px ระหว่าง Label กับ Input */
-    vertical-align: middle; /* จัดตำเเหน่งตามศูนย์กลางเทียบกับ Input */
+    display: inline-block; 
+    margin-right: 10px; 
+    vertical-align: middle; 
   }
   
   .radio-container input[type="radio"] {
-    display: inline-block; /* ให้ Input แสดงเป็น Block */
-    vertical-align: middle; /* จัดตำเเหน่งตามศูนย์กลางเทียบกับ Label */
+    display: inline-block; 
+    vertical-align: middle; 
   }
 
   .container {
@@ -73,7 +73,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
-    min-height: 50vh; /* ลด min-height เหลือ 50vh แทน */
+    min-height: 50vh; 
     }
     
     .container form {

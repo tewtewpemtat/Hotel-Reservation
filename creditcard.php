@@ -6,10 +6,7 @@ include('php/creditcard.php'); ?>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- custom css file link  -->
     <link rel="stylesheet" href="css/creditcard.css">
-
 </head>
 <body>
 <header>                        
@@ -18,13 +15,9 @@ include('php/creditcard.php'); ?>
       </header> 
 <div class="container">
 <form action="" method="POST">
-
         <div class="row">
-
             <div class="col">
-
                 <center><h3 class="title">Contact and address</h3></center>
-
                 <div class="inputBox">
                     <span>First and last name :</span>
                     <input type="text" placeholder="John Deo" name = "name"  required >
@@ -41,7 +34,6 @@ include('php/creditcard.php'); ?>
                     <span>City :</span>
                     <input type="text" placeholder="ฺBangkok" required>
                 </div>
-
                 <div class="flex">
                     <div class="inputBox">
                         <span>Country :</span>
@@ -52,12 +44,9 @@ include('php/creditcard.php'); ?>
                         <input type="text" placeholder="395669" required>
                     </div>
                 </div>
-
             </div>
-
             <div class="col">
                 <center><h3 class="title">Pay by credit card</h3></center>
-
                 <div class="inputBox">
                     <span>Cards accepted :</span>
                     <img src="Image/card_img.png"  alt="">
@@ -74,7 +63,6 @@ include('php/creditcard.php'); ?>
                     <span>Expiration month :</span>
                     <input type="text" placeholder="05" required>
                 </div>
-
                 <div class="flex">
                     <div class="inputBox">
                         <span>Expiration year :</span>
@@ -85,8 +73,6 @@ include('php/creditcard.php'); ?>
                         <input type="text" placeholder="033" required>
                     </div>
                 </div>
-
-            
         </div>
         <button type="submit" class = "submit-btn" name="pay-now">Payment</button>
     </form>

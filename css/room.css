@@ -22,8 +22,6 @@ a {
   color: #333;
 }
 
-
-/* Header styles */
 header {
   background-color: #333;
   color: #fff;
@@ -38,7 +36,6 @@ header h1 {
   font-size: 36px;
 }
 
-/* adminbutton styles */
 .admin-link {
   background-color: #5d5b5b;
   color: #fff;
@@ -56,7 +53,6 @@ header h1 {
   color: #fff;
 }
 
-/* Header2 styles */
 .header2 {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
@@ -74,7 +70,6 @@ header h1 {
   font-size: 30px;
 }
 
-/* nav styles */
 nav {
   float: left;
   width: 200px;
@@ -127,7 +122,6 @@ nav a:hover {
   color: #ff7f50;
 }
 
-/* Sidebar styles */
 .sidebar {
   margin-top: 15px;
   padding-left: 10px;
@@ -168,13 +162,11 @@ nav a:hover {
    
   }
 
-  /* card styles */
-  
   .card {
     display: flex;
     width: 900px;
     height: 230px;
-    max-width: 1500px; /* Increase this value to make the cards wider */
+    max-width: 1500px; 
     background-color: #fff;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
@@ -252,7 +244,6 @@ nav a:hover {
     background-color: #1a1a1a;
   }
   
-  /* Book now button */
   .book-now {
     border-radius: 20px;
     text-decoration: none;

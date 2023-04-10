@@ -4,7 +4,6 @@ if (!isset($_GET['hotel_name'])) {
     header("Location: index.php");
     exit;
   }
-  
 $_SESSION['hotel_name'] = $_GET['hotel_name'];
 $hotel_name = $_SESSION['hotel_name'];
   
@@ -24,7 +23,6 @@ $stmt2 = $conn->prepare($sql2);
     } else {
         $room_type = $_POST['room-type'];
         $bed_type = $_POST['bed-type'];
-
         $sql2 = "SELECT * FROM room WHERE Hotel = :hotel_name AND status = 'available'";
     if ($room_type !== '') {
       $sql2 .= " AND Roomtype = :room_type";
@@ -42,9 +40,6 @@ $stmt2 = $conn->prepare($sql2);
     }
     $stmt2->execute();
   }
-    
 $_SESSION['username'] = $username;
 $_SESSION['hotel_name'] = $hotel_name;
-
-
 ?>

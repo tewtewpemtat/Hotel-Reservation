@@ -29,7 +29,6 @@ include('php/index.php');
     </nav>      
     <div class="all">                   
       <div class="sidebar" > 
-        <!-- content1 -->
         <form action="#" method="GET">
           <input type="search" placeholder="Search...." name="q">
           <button type="submit" class="bsearch">Search</button>
@@ -79,6 +78,6 @@ include('php/index.php');
       }
       ?>	  
     </div>
- </div>                        
-  </body>
+   </div>                        
+ </body>
 </html>

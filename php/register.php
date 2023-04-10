@@ -5,17 +5,13 @@
 		exit;
 	}
 	if($_SERVER['REQUEST_METHOD'] == 'POST') {
-	    // Retrieve form data
 		$email = $_POST['email'];
 	    $username = $_POST['username'];
 	    $password = $_POST['password'];
 	    $contact = $_POST['contact'];
-	    
-	    // Validate form data
 	    if(empty($username) || empty($email) || empty($password) || empty($contact)) {
             echo "<script>alert('Please fill in all required fields.');</script>";
 	    } else {
-	        // Perform database connection and insert new user
 	        $conn = new PDO("mysql:host=localhost;dbname=hotelreservation;charset=utf8","root","");
 	        $query = "INSERT INTO user (email, username, password, contact) VALUES (:email, :username, :password, :contact)";
 	        $stmt = $conn->prepare($query);

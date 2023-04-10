@@ -21,8 +21,6 @@ body {
     color: #333;
   }
   
-  
-  /* Header styles */
   header {
     background-color: #333;
     color: #fff;
@@ -65,9 +63,6 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,.1);
   }
   
- 
-  
-
  form .row .col .inputBox input{
     width: 100%;
     border:1px solid #ccc;
@@ -76,8 +71,6 @@ body {
     text-transform: none;
   }
  
-
-  
   .container form .submit-btn{
     width: 100%;
     padding:12px;

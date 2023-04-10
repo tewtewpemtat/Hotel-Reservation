@@ -1,18 +1,12 @@
 <?php
+session_start();
 if (!isset($_GET['roomID']) && isset($_GET['hotel'])) {
     header("Location: index.php");
     exit;
 }
 
-session_start();
-if (!isset($_SESSION['email'])) {
-    header("Location: login.php");
-    exit;
-}
-
 $roomID = $_GET['roomID'];
 $hotel = $_GET['hotel'];
-
 
 if(isset($_POST['payment-method'])) {
     $payment_method = $_POST['payment-method'];
@@ -28,5 +22,4 @@ if(isset($_POST['payment-method'])) {
         exit();
     }
 }
-
 ?> 

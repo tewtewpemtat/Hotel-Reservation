@@ -12,7 +12,6 @@ a {
   color: #333;
 }
 
-/* Header styles */
 header {
   background-color: #333;
   color: #fff;
@@ -70,8 +69,6 @@ nav {
   color: #ff7f50;
   }
  
-
-/* adminbutton styles */
 .admin-link {
   background-color: #5d5b5b;
   color: #fff;
@@ -107,8 +104,6 @@ nav {
   color: #fff;
 }
 
-
-/* Header2 styles */
 .header2 {
   background-color: #fff;
   border-bottom: 1px solid #ddd;
@@ -127,7 +122,6 @@ nav {
  
 }
 
-/* Sidebar styles */
 .sidebar {
   padding: 0px;
 }
@@ -162,7 +156,6 @@ nav {
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
-
 
 
 .card {
@@ -260,7 +253,6 @@ input[type="search"] {
 
 }
 
-
   button {
   text-decoration: none;
   background-color: #333;
@@ -274,7 +266,6 @@ input[type="search"] {
   background-color: #1a1a1a;
   }
   
-  /* Book now button */
   .book-now {
   background-color: #008000;
   color: #fff;
@@ -289,7 +280,6 @@ input[type="search"] {
   background-color: #005700;
   }
   
-
   .all {
       display: flex;
       justify-content: center;

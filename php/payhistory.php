@@ -11,7 +11,6 @@ $stmt->execute([$email]);
 $user = $stmt->fetch();
 $username = $user['username'];
 
-// retrieve payment history data for the user
 $stmt = $conn->prepare("SELECT * FROM payment WHERE Name = ?");
 $stmt->execute([$username]);
 $payment = $stmt->fetchAll();
