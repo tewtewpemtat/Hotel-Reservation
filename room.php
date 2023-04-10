@@ -50,6 +50,7 @@
         echo "<img src='data:image/jpeg;base64," . base64_encode($row['Image']) . "' alt='Room Image'>";
         echo "<div class='card-details'>";
         echo "<h3 class='room-type'>Room " . $row['Number'] . "</h3>";
+        echo "<p class='room-description'>Floor: " . $row['Floor'] . "</p>";
         echo "<p class='room-description'>Roomtype: " . $row['Roomtype'] . "</p>";
         echo "<p class='room-description'>Bedtype: " . $row['Bedtype'] . "</p>";
         echo "<p class='room-availability'>Status: " . $row['Status'] . "</p>";
