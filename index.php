@@ -13,7 +13,7 @@ include('php/index.php');
       <h1>Hotel Reservation</h1>
         <a href="logout.php" class="admin-link">Logout</a>
       </header> 
-      <nav>                           <!-- nav -->
+      <nav>                         
         <div class="profile">
         <div class="profile">
               <div class="profile">
