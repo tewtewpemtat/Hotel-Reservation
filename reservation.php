@@ -14,7 +14,7 @@ include('php/reservation.php'); ?>
       <h1>Reservation</h1>
         <a href="logout.php" class="admin-link">Logout</a>
       </header> 
-      <nav>                           <!-- nav -->
+      <nav>                     
         <div class="profile">
               <div class="profile">
               <center><h4>Hello <?php echo "$username";?></h4><center>

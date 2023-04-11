@@ -25,6 +25,6 @@ include('php/qrcode.php');
         </div>
         <button type="submit" class = "submit-btn" name="check-pay">Check payment status</button>
     </form>
- </div>    
+ </div>   
 </body>
 </html>

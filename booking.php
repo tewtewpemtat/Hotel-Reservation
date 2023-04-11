@@ -2,7 +2,7 @@
 include('php/booking.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html> 
   <head>
     <title>Booking</title>
     <link rel="stylesheet" type="text/css" href="css/booking.css">

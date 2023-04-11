@@ -4,7 +4,7 @@ include('php/register.php'); ?>
 <html>
 <head>
 	<title>User Registration</title>
-    <link rel="stylesheet" type="text/css" href="css/register.css">      
+    <link rel="stylesheet" type="text/css" href="css/register.css">     
 </head>
 <body>
 	<form method="POST" action="">

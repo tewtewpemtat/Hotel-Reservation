@@ -12,7 +12,7 @@ include('php/payhistory.php');
     <link rel="stylesheet" href="css/payhistory.css">
 </head>
 <body>
-    <header>                        
+    <header>                       
         <h1>Payment History</h1>
         <a href="logout.php" class="admin-link">Logout</a>
     </header> 

@@ -19,4 +19,4 @@ if (!isset($_SESSION['email'])) {
         <center><p>Transaction Completed</p><p>Have a nice day</p></center>
       </div><br>
     </body>
-</html>
+</html> 

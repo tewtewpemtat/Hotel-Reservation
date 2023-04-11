@@ -14,7 +14,6 @@ $roomID = $_SESSION['roomID'];
 $hotel = $_SESSION['hotel'];
 $total = $_SESSION['price'];
 
-
 if(isset($_POST['check-pay'])){
     $status = 'Payment Successful';
     $paytype = 'Promtpay';

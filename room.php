@@ -24,7 +24,7 @@
             </ul>
           </li>
       </ul>
-    </nav>                        
+    </nav>                       
     <div class="sidebar">  
     <form method="POST" action="">
     <label for="room-type">Room Type:</label>

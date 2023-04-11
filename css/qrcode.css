@@ -15,7 +15,6 @@ body {
     transition: all .2s linear;
   }
   
-  
   a {
     text-decoration: none;
     color: #333;
@@ -83,4 +82,4 @@ body {
   
   .container form .submit-btn:hover{
     background: #2ecc71;
-  } 
+  }

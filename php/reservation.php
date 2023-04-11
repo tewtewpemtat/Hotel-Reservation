@@ -15,8 +15,6 @@ $reservation_stmt = $conn->prepare("SELECT * FROM reservation WHERE Name = ? AND
 $reservation_stmt->execute([$username]);
 $reservation = $reservation_stmt->fetchAll();
 
-
-
 if (isset($_POST['cancel'])) {
   $roomID = $_POST['roomID'];
   $hotel = $_POST['hotel']; 

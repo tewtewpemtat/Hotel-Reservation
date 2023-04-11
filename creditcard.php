@@ -76,6 +76,6 @@ include('php/creditcard.php'); ?>
         </div>
         <button type="submit" class = "submit-btn" name="pay-now">Payment</button>
     </form>
-</div>    
+</div>   
 </body>
 </html>

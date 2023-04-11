@@ -11,7 +11,7 @@ include('php/payment.php');
   <link rel="stylesheet" href="css/payment.css">
 </head>
 <body>
-  <header>                        
+  <header>                       
     <h1>Payment</h1>
     <a href="index.php" class="admin-link">Home</a>
   </header>

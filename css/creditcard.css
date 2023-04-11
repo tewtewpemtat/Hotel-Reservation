@@ -15,14 +15,11 @@ body {
     transition: all .2s linear;
   }
   
-  
   a {
     text-decoration: none;
     color: #333;
   }
   
-  
-  /* Header styles */
   header {
     background-color: #333;
     color: #fff;

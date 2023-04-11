@@ -63,6 +63,4 @@ if(isset($_POST['book-now'])){
     header("Location: reservation.php");
     exit();
 }
-
-
 ?>

@@ -14,7 +14,7 @@ if (!isset($_SESSION['success'])) {
     <header>                        
       <h1>Payment</h1>
         <a href="index.php" class="admin-link">Home</a>
-    </header> 
+    </header>
       <div class="card">
       <div style="border-radius:200px; height:200px; width:200px; background: #F8FAF5; margin:0 auto;">
         <i class="checkmark">✓</i>
