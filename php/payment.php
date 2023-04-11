@@ -25,4 +25,4 @@ if(isset($_POST['payment-method'])) {
         exit();
     }
 }
-?> 
+?>
