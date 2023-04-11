@@ -1,4 +1,4 @@
-## เว็บ Hotel Reservation : https://bookingfasthotel.000webhostapp.com/
+## เว็บ Hotel Reservation (เว็บจองโรงแรม) : https://bookingfasthotel.000webhostapp.com/
 
 ## สมาชิกกลุ่ม
 
